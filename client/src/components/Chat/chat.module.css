@@ -1,0 +1,40 @@
+.Container {
+  display: flex;
+  background-color: GRAY;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.ChatContainer {
+  display: flex;
+  width: 70%;
+  height: 80%;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.Online {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  background-color: lightgray;
+  height: 80%;
+}
+
+.User {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 3vh;
+}
+
+.Icon {
+  margin-right: 10px;
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}

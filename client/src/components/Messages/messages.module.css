@@ -1,0 +1,11 @@
+.Container {
+  display: flex;
+  width: 90%;
+  height: 500px;
+
+  justify-content: center;
+}
+
+.Message {
+  width: 100%;
+}

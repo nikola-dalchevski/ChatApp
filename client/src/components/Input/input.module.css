@@ -1,0 +1,18 @@
+.Container {
+  width: 90%;
+  text-align: center;
+}
+
+.Input {
+  width: 50%;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.Button {
+  height: 32px;
+  width: 10%;
+  border: none;
+  color: white;
+  background-color: blue;
+}

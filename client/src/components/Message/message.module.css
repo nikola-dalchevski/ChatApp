@@ -1,0 +1,29 @@
+.Container {
+  width: 100%;
+}
+
+.FloatLeft {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.FloatRight {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Name {
+  margin: 0px 10px;
+  align-self: center;
+}
+
+.Text {
+  line-height: 5px;
+  background-color: blue;
+  padding: 0px 30px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+  color: white;
+}

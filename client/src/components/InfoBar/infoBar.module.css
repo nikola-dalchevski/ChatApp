@@ -1,0 +1,19 @@
+.Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Close {
+  font-size: 4vh;
+  padding: 10px;
+}
+
+.Close a {
+  text-decoration: none;
+}
+
+.Room {
+  font-size: 2vh;
+  margin: 0 40%;
+}
