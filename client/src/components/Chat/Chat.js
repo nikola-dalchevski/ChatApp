@@ -49,8 +49,6 @@ class Chat extends React.Component {
     });
 
     socket.on("message", (message) => {
-      console.log("inside");
-      console.log(message);
       this.setState({ messages: [...this.state.messages, message] });
     });
   }
@@ -73,12 +71,11 @@ class Chat extends React.Component {
       (event.target.id === "submit" && this.state.message)
     ) {
       socket.emit("sendMessage", this.state.message, () => {});
+      this.setState({ message: "" });
     }
-    console.log(this.state.message, this.state.messages);
   };
 
   render() {
-    console.log("test", this.state.messages);
     return (
       <div className={classes.Container}>
         <div className={classes.ChatContainer}>
@@ -94,14 +91,14 @@ class Chat extends React.Component {
               />
             </React.Fragment>
           ) : (
-            <div>You are alredy logged in on other device!</div>
+            <div>User with that username alredy in the room!</div>
           )}
         </div>
         <div className={classes.Online}>
           <h3 style={{ paddingLeft: "15px" }}>Online:</h3>
           {this.state.users.map((user) => {
             return (
-              <div className={classes.User}>
+              <div key={user.id} className={classes.User}>
                 <div className={classes.Icon}></div>
                 <span>{user.name}</span>
               </div>
